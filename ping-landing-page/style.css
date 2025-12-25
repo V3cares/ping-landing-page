@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+width: 100%;
+height: 100vh;
+font-family: "Rubik", sans-serif;
+padding: 2rem;
+}
+
+.main-heading{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.logo{
+    width: 100px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+h1{
+    margin-top: 1rem;
+    font-size: 3rem;
+    color: hsl(0, 0%, 59%);
+}
+
+p{
+    color: hsl(209, 33%, 12%);
+}
+
+span{
+    color: hsl(209, 33%, 12%);
+}
+
+.input-box{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+#error-msg{
+    position: absolute;
+    top:280px;
+    left: 400px;
+    color: hsl(354, 100%, 66%);
+    text-align: center;
+}
+
+::placeholder{
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+input{
+    width: 320px;
+    height: 60px;
+    padding: 0.8rem 2.3rem;
+    border: 2px solid hsl(223, 100%, 88%);
+    border-radius: 2rem;
+    outline: none;
+    display: block;
+    
+}
+
+.input-box{
+    margin-top: 0;
+}
+button{
+    font-size: 1.5rem;
+    padding: 0.8rem 2.3rem;
+    margin-left: 1rem;
+    border: none;
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+    cursor: pointer;
+    border-radius: 2rem;
+    font-weight: 600;
+}
+
+.illustration{
+    width: 100%;
+    max-width: 600px;
+    margin: 1rem auto;
+    display: block;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+.social-icons{
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 1rem;
+    border: 1px solid hsl(223, 87%, 63%);
+    color: hsl(223, 87%, 63%);
+}
+
+@media (max-width:500px) {
+body{
+    width: 100%;
+    padding: 1.5rem;
+}
+.main-heading{
+    width: 100%;
+    text-align: center;
+}
+
+.input-box{
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+}
+
+form{
+    flex-direction: column;
+}
+
+input{
+    width: 100%;
+    padding: 1rem 2.3rem;
+    margin-bottom: 0.5rem;
+}
+
+button{
+    width: 100%;
+    margin-top: 1rem;
+    margin-left: 0;
+    font-size: 1.5rem;
+}
+
+.illustration{
+    width: 80%;
+}
+
+#error-msg{
+    left: 70px;
+    top:80px
+    
+}
+}
